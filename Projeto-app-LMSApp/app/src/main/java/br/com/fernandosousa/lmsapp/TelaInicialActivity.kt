@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_tela_inicial.*
+import kotlinx.android.synthetic.main.toolbar.*
 
 class TelaInicialActivity : DebugActivity() {
 
@@ -29,6 +30,8 @@ class TelaInicialActivity : DebugActivity() {
 
         Toast.makeText(context, "Parâmetro: $nome", Toast.LENGTH_LONG).show()
         Toast.makeText(context, "Numero: $numero", Toast.LENGTH_LONG).show()
+
+        setSupportActionBar(toolbar)
 
         mensagemInicial.text = "Bem vindo $nome"
 
